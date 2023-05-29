@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="form" method="post">
+      <div id="container">
+        <main class="table">
+          <header class="head">
+            <h1>BMI</h1>
+          </header>
+          <div class="item-age item">
+            <label>age</label>
+            <input type="age" id="age-bmi" name="age" class="cadr"/>
+            <div class="error-age error"></div>
+          </div>
+          <div class="item-gender item">
+            <div>gender</div>
+            <input type="radio" id="male-gender" name="gender" value="male" />
+            <label>male</label>
+            <input type="radio" id="fmale-gender" name="gender" value="fmale" />
+            <label>fmale</label>
+            <div class="error-gender error"></div>
+          </div>
+          <div class="height-item item">
+            <label>height</label>
+            <input
+              type="number"
+              placeholder="cm"
+              id="height-cm"
+              name="height"
+              class="cadr"
+            />
+            <div class="error-height error"></div>
+          </div>
+          <div class="width-item item">
+            <label>width</label>
+            <input type="number" placeholder="cm" id="width-cm" name="width" class="cadr" />
+            <div class="error-width error"></div>
+          </div>
+          <div class="sub item">
+            <button onclick="signup(event)">send</button>
+          </div>
+        </main>
+      </div>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
